@@ -31,7 +31,7 @@ public class emailConfig {
         mailSender.setPort(Integer.parseInt(port));
         Properties properties = mailSender.getJavaMailProperties();
         properties.put("mail.smtp.auth", "true");
-        properties.put("mail.smtp.starttls", "true");
+        properties.put("mail.smtp.starttls.enable", "true");
         return mailSender;
     }
 }
