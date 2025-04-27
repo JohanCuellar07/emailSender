@@ -32,7 +32,7 @@ public class emailService {
     public void advancedEmail(String addressMail) {
         try {
             // destinatario
-            // String addressMail = "cjcs.cadenasarasty8@gmail.com";
+            // String addressMail = "correo@gmail.com";
             // Asunto
             String subject = "Este es un correo de prueba";
             // Cuerpo Correo
@@ -293,9 +293,9 @@ public class emailService {
             + "        <h2>¡Gracias por tu compra!</h2>\n"
             + "        <p>Hemos recibido tu pedido. Aquí están los detalles:</p>\n"
             + "        <ul style=\"font-size: 16px; color: #555555;\">\n"
-            + "            <li>La Noche de los Muertos Vivientes (1968) - $60,000</li>\n"
-            + "            <li>Star Wars: Episodio IV - Una Nueva Esperanza (1977) - $70,000</li>\n"
-            + "            <li>El Exorcista (1973) - $50,000</li>\n"
+            + "            <li>Zathura: A Space Adventure (2005) - $60,000</li>\n"
+            + "            <li>Brokeback Mountain (2005) - $70,000</li>\n"
+            + "            <li>Harry Potter and the Philosopher’s Stone (2001) - $50,000</li>\n"
             + "        </ul>\n"
             + "        <h3>Total de tu compra: $180,000 COP</h3>\n"
             + "        <p>Te notificaremos cuando tu pedido esté en camino.</p>\n"
