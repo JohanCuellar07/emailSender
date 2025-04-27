@@ -1,7 +1,7 @@
 function enviarRecoverPasswordMail() {
     var email = document.getElementById("email").value;
     if (!email) {
-        alert("Por favor, ingrese un correo electrónico válido");
+        alert("Please enter a valid email");
         return
     }
     var url = "http://127.0.0.1:8080/RecoverPasswordEmail/" + email;
@@ -11,5 +11,5 @@ function enviarRecoverPasswordMail() {
             "Content-Type": "application/json"
         }
     })
-    alert("Correo enviado con éxito");
+    alert("Email sent successfully");
 }

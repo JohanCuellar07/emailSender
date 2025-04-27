@@ -2,11 +2,11 @@ function enviarNewAccountMail() {
     var email = document.getElementById("email").value;
     var activationCode = document.getElementById("activationCode").value;
     if (!email || !activationCode) {
-        alert("Por favor, ingrese un correo electrónico y un código de activación válidos");
+        alert("Please enter a valid email and activation code");
         return;
     }
     if (activationCode !== "6789") {
-        alert("El código de activación no es correcto");
+        alert("Activation code is incorrect");
         return;
     }
     var url = "http://127.0.0.1:8080/newAccountEmail/" + email;
@@ -16,5 +16,5 @@ function enviarNewAccountMail() {
             "Content-Type": "application/json"
         }
     })
-    alert("Correo enviado con éxito");
+    alert("Email sent successfully");
 }

@@ -21,7 +21,7 @@ function checkMovies() {
 function enviarLowStockMail() {
     var email = document.getElementById("email").value;
     if (!email) {
-        alert("Por favor, ingrese un correo electrónico válido");
+        alert("Please enter a valid email");
         return
     }
     var url = "http://127.0.0.1:8080/lowStockEmail/" + email;
@@ -31,5 +31,5 @@ function enviarLowStockMail() {
             "Content-Type": "application/json"
         }
     })
-    alert("Se ha enviado un correo del stock bajo");
+    alert("Low stock email sent");
 }
