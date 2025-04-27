@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/Designer.jpeg">
+    <title>RetroVision</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <section class="navbar">
+        <div class="navbar-left">
+            <div class="menu menu-button" onclick="toggleMenu()"></div>
+            <div class="title" onclick="window.location.href='index.html'">RetroVision</div>
+        </div>
+    
+        <div class="nav-links">
+            <div class="crud" onclick="window.location.href='Login.html'">Login</div>
+            <div class="crud" onclick="window.location.href='register.html'">Register</div>
+            <div class="crud" onclick="window.location.href='inventory.html'">Inventory</div>
+            <div class="crud active" onclick="window.location.href='shoppingCart.html'">Shopping Cart</div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="form-wrapper">
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </form>
+        </div>
+
+        <section class="cart-container">
+            <div class="title title-title" onclick="window.location.href='shoppingCart.html'">
+                <h1>shopping Cart</h1>
+            </div>
+            <div id="cart" >
+                <!-- Producto 1 -->
+                <div class="cart-item">
+                    <img src="https://via.placeholder.com/100x150" alt="Imagen de película">
+                    <div class="cart-item-info">
+                        <div class="cart-item-title">Star Wars: Episodio IV - Una Nueva Esperanza</div>
+                        <div class="cart-item-description">Una emocionante aventura en el espacio.</div>
+                    </div>
+                    <div class="cart-item-actions">
+                        <div class="cart-item-price">$60,000</div>
+                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                    </div>
+                </div>
+        
+                <!-- Producto 2 -->
+                <div class="cart-item">
+                    <img src="https://via.placeholder.com/100x150" alt="Imagen de película">
+                    <div class="cart-item-info">
+                        <div class="cart-item-title">El Exorcista</div>
+                        <div class="cart-item-description">Drama sobre la vida y las decisiones difíciles.</div>
+                    </div>
+                    <div class="cart-item-actions">
+                        <div class="cart-item-price">$70,000</div>
+                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                    </div>
+                </div>
+        
+                <!-- Producto 3 -->
+                <div class="cart-item">
+                    <img src="https://via.placeholder.com/100x150" alt="Imagen de película">
+                    <div class="cart-item-info">
+                        <div class="cart-item-title">La Noche de los Muertos Vivientes</div>
+                        <div class="cart-item-description">Comedia sobre un grupo de amigos y su loca aventura.</div>
+                    </div>
+                    <div class="cart-item-actions">
+                        <div class="cart-item-price">$50,000</div>
+                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Total -->
+            <div class="cart-total">
+                Total: $180,000
+            </div>
+        
+            <!-- Botón de checkout -->
+            <div class="text-center">
+                <button class="btn btn-checkout" onclick="enviarPurchaseMail()" type="button">Proceder al Pago</button>
+            </div>
+        </section>
+    </section>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/purchase.js"></script>
+</body>
+</html>

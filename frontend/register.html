@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/Designer.jpeg">
+    <title>RetroVision</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <section class="navbar">
+        <div class="navbar-left">
+            <div class="menu menu-button" onclick="toggleMenu()"></div>
+            <div class="title" onclick="window.location.href='index.html'">RetroVision</div>
+        </div>
+    
+        <div class="nav-links">
+            <div class="crud" onclick="window.location.href='Login.html'">Login</div>
+            <div class="crud active" onclick="window.location.href='register.html'">Register</div>
+            <div class="crud" onclick="window.location.href='inventory.html'">Inventory</div>
+            <div class="crud" onclick="window.location.href='shoppingCart.html'">Shopping Cart</div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="title title-title" onclick="window.location.href='register.html'">
+            <h1>Crear Cuenta</h1>
+        </div>
+
+        <div class="form-wrapper">
+            <form>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+
+                <button onclick="enviarActivationMail()" type="button">Crear cuenta</button>
+
+                <div class="register-link">
+                    <p>¿Ya tienes una cuenta? <a href="login.html">Iniciar sesión</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/activation.js"></script>
+</body>
+</html>

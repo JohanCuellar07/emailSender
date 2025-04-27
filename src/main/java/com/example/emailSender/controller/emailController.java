@@ -23,4 +23,40 @@ public class emailController {
         emailService.advancedEmail(email);
         return "Mail sent successfully";
     }
+
+    @GetMapping("/newAccountEmail/{email}")
+    public String newAccountEmail(@PathVariable String email) {
+        emailService.newAccountEmail(email);
+        return "Mail sent successfully";
+    }
+
+    @GetMapping("/RecoverPasswordEmail/{email}")
+    public String RecoverPasswordEmail(@PathVariable String email) {
+        emailService.RecoverPasswordEmail(email);
+        return "Mail sent successfully";
+    }
+
+    @GetMapping("/codeActivationEmail/{email}")
+    public String codeActivationEmail(@PathVariable String email) {
+        emailService.codeActivationEmail(email);
+        return "Mail sent successfully";
+    }
+
+    @GetMapping("/changedPasswordEmail/{email}")
+    public String changedPasswordEmail(@PathVariable String email) {
+        emailService.changedPasswordEmail(email);
+        return "Mail sent successfully";
+    }
+
+    @GetMapping("/lowStockEmail/{email}")
+    public String lowStockEmail(@PathVariable String email) {
+        emailService.lowStockEmail(email);
+        return "Mail sent successfully";
+    }
+
+    @GetMapping("/purchaseEmail/{email}")
+    public String purchaseEmail(@PathVariable String email) {
+        emailService.purchaseEmail(email);
+        return "Mail sent successfully";
+    }
 }

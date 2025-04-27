@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/Designer.jpeg">
+    <title>RetroVision</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <section class="navbar">
+        <div class="navbar-left">
+            <div class="menu menu-button" onclick="toggleMenu()"></div>
+            <div class="title" onclick="window.location.href='index.html'">RetroVision</div>
+        </div>
+    
+        <div class="nav-links">
+            <div class="crud" onclick="window.location.href='Login.html'">Login</div>
+            <div class="crud" onclick="window.location.href='register.html'">Register</div>
+            <div class="crud active" onclick="window.location.href='inventory.html'">Inventory</div>
+            <div class="crud" onclick="window.location.href='shoppingCart.html'">Shopping Cart</div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="form-wrapper">
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </form>
+        </div>
+        <div class="title title-title" onclick="window.location.href='inventory.html'">
+            <h1>inventory</h1>
+        </div>
+        <div id="listMovies" class="movie-grid">
+            <!-- Movie 1 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center" data-id="1">
+                <div class="movie-card">
+                    <div class="movie-image">
+                        <img src="urlImage" alt="Imagen de la película" id="card-image">
+                    </div>
+            
+                    <div class="movie-content">
+                        <div class="movie-title" id="card-title">Movie Title</div>
+                        <div class="movie-info">
+                            <span id="card-year">Year</span> • <span id="card-time">Time</span> min
+                        </div>
+                        <div class="movie-description" id="card-description">Movie Description</div>
+            
+                        <div class="movie-buttons">
+                            <button class="btn-edit" onclick="">Update</button>
+                            <button class="btn-delete" onclick="deleteMovie(1)">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 2 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center" data-id="2">
+                <div class="movie-card">
+                    <div class="movie-image">
+                        <img src="urlImage" alt="Imagen de la película" id="card-image">
+                    </div>
+            
+                    <div class="movie-content">
+                        <div class="movie-title" id="card-title">Movie Title</div>
+                        <div class="movie-info">
+                            <span id="card-year">Year</span> • <span id="card-time">Time</span> min
+                        </div>
+                        <div class="movie-description" id="card-description">Movie Description</div>
+            
+                        <div class="movie-buttons">
+                            <button class="btn-edit" onclick="">Update</button>
+                            <button class="btn-delete" onclick="deleteMovie(2)">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 3 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center" data-id="3">
+                <div class="movie-card">
+                    <div class="movie-image">
+                        <img src="urlImage" alt="Imagen de la película" id="card-image">
+                    </div>
+            
+                    <div class="movie-content">
+                        <div class="movie-title" id="card-title">Movie Title</div>
+                        <div class="movie-info">
+                            <span id="card-year">Year</span> • <span id="card-time">Time</span> min
+                        </div>
+                        <div class="movie-description" id="card-description">Movie Description</div>
+            
+                        <div class="movie-buttons">
+                            <button class="btn-edit" onclick="">Update</button>
+                            <button class="btn-delete" onclick="deleteMovie(3)">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- Movie 4 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center" data-id="4">
+                <div class="movie-card">
+                    <div class="movie-image">
+                        <img src="urlImage" alt="Imagen de la película" id="card-image">
+                    </div>
+            
+                    <div class="movie-content">
+                        <div class="movie-title" id="card-title">Movie Title</div>
+                        <div class="movie-info">
+                            <span id="card-year">Year</span> • <span id="card-time">Time</span> min
+                        </div>
+                        <div class="movie-description" id="card-description">Movie Description</div>
+            
+                        <div class="movie-buttons">
+                            <button class="btn-edit" onclick="">Update</button>
+                            <button class="btn-delete" onclick="deleteMovie(4)">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 5 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center" data-id="5">
+                <div class="movie-card">
+                    <div class="movie-image">
+                        <img src="urlImage" alt="Imagen de la película" id="card-image">
+                    </div>
+            
+                    <div class="movie-content">
+                        <div class="movie-title" id="card-title">Movie Title</div>
+                        <div class="movie-info">
+                            <span id="card-year">Year</span> • <span id="card-time">Time</span> min
+                        </div>
+                        <div class="movie-description" id="card-description">Movie Description</div>
+            
+                        <div class="movie-buttons">
+                            <button class="btn-edit" onclick="">Update</button>
+                            <button class="btn-delete" onclick="deleteMovie(5)">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 6 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center" data-id="6">
+                <div class="movie-card">
+                    <div class="movie-image">
+                        <img src="urlImage" alt="Imagen de la película" id="card-image">
+                    </div>
+            
+                    <div class="movie-content">
+                        <div class="movie-title" id="card-title">Movie Title</div>
+                        <div class="movie-info">
+                            <span id="card-year">Year</span> • <span id="card-time">Time</span> min
+                        </div>
+                        <div class="movie-description" id="card-description">Movie Description</div>
+            
+                        <div class="movie-buttons">
+                            <button class="btn-edit" onclick="">Update</button>
+                            <button class="btn-delete" onclick="deleteMovie(6)">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- Movie 7 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center" data-id="7">
+                <div class="movie-card">
+                    <div class="movie-image">
+                        <img src="urlImage" alt="Imagen de la película" id="card-image">
+                    </div>
+            
+                    <div class="movie-content">
+                        <div class="movie-title" id="card-title">Movie Title</div>
+                        <div class="movie-info">
+                            <span id="card-year">Year</span> • <span id="card-time">Time</span> min
+                        </div>
+                        <div class="movie-description" id="card-description">Movie Description</div>
+            
+                        <div class="movie-buttons">
+                            <button class="btn-edit" onclick="">Update</button>
+                            <button class="btn-delete" onclick="deleteMovie(7)">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/inventory.js"></script>
+</body>
+</html>
